@@ -1,0 +1,132 @@
+
+/** DEBUT ma div qui le block d'acceuil**/
+
+#vue_acceuil img{
+	width: 250px;
+	border-radius: 200px;
+	height:250px
+}
+
+td{
+	font-size: 1.2em;
+	border-radius: 200px;
+}
+td ul li {
+	font-size: 0.5em;
+	font-family: Goudy old style;
+	margin-left: 80px;
+}
+td a:hover{
+color: blue;
+opacity: -10px;
+}
+
+#vue_acceuil{
+	width:70%;
+	margin:100px auto;
+}
+#vue_acceuil p{
+	font-family: Goudy old style;
+	color:#156278;
+}
+/** Debute de mon image qui se trouve dans ma div**/
+/**Debut du tableau de la page profiles des étudiants**/
+table{
+	margin: 50px;
+	
+}
+.titre{
+	background-color: #156278;
+}
+tbody a{
+	text-decoration: none;
+	margin-right: 10px;
+	float: right;
+	font-size: 1.5em;
+	color: grey;
+}
+tbody li{
+	list-style-type:none;
+	float: left;
+	margin: 20px;
+}
+h3{
+	text-align: center;
+	margin: 4px;
+	font-size: 1.0em;
+	color: white;
+	background-color: #156278; 
+}
+td{
+	padding: 2px;
+	font-family: Goudy old style;
+	color:#156278;
+}
+/** FIN DE MA TABLE**/
+
+body{
+background-color:lightyellow;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.entete{
+	background-color: #156278;
+	height: 50px;
+
+}
+.nav_bar{
+	float: right;
+	margin-top: 8px;
+}
+.nav_bar ul li{
+ list-style-type: none;
+ float: left;
+}
+.nav_bar  a{
+	text-decoration: none;
+	margin-right: 20px;
+	color: white;
+	font-size: 20px;
+}
+.corps{
+	height: 546px;
+}
+/** ICI c'est l'image de l'acceuil**/
+img{
+	border-radius: 250px;
+	width: 80px;
+	height: 50px;
+}
+/** La profiles est un attribut de ma table**/
+.profiles{
+	margin: 150px auto;
+	border: 0;
+	
+}
+
+.profiles td{
+	border: 0px;
+}
+.profiles img{
+	border-radius: 200px;
+	width: 120px;
+	height: 250px;
+}
+/**  Fin de la profiles est un attribut de ma table**/
+.h2{
+	font-size: 1.0em;
+	color: white;
+	text-align: center;
+	background-color: #156278;
+}
+.pieds{
+	background-color: #156278;
+	padding: 30px;
+}
+.pieds p{
+	text-align: center;
+	color: white;
+}
+/***le debut du corps de mon site**/

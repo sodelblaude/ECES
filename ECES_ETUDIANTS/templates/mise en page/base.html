@@ -1,0 +1,36 @@
+{% load static %}
+<!---LE BLOG LAOD STATIC PERMET De recharge tout les paramettre de fichier static-->
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<title>{%block title%}{%endblock%}</title>
+	<meta charset="utf-8"/>
+	<meta name="Author" content="VALDY MATONDO">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="{% static '/css/responsivite.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
+</head>
+<body>
+<div class="pages">
+<!--La fonction include permet de faire la liaison entre les fichiers html qui
+			ont été definit à part-->
+	<div class="entete">
+		{% include "mise en page/nav_bar.html" %}
+	</div>
+<!-- Fin de du block de mon entete-->
+
+<!--Debut  du block du corps de ma page-->
+	<div class="corps">
+	{%  block content %}
+		
+	{% endblock %}
+	</div>
+<!-- Fin de on corps-->
+<!--Debut de du block du pieds de ma page-->
+	<div class="pieds">
+		{% include "mise en page/footer.html" %}
+	</div>
+<!-- Fin du pieds de ma page-->
+</div>
+</body>
+</html>

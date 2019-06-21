@@ -1,0 +1,36 @@
+{% extends 'mise en page/base.html' %}
+<!---le block content veut dire quoi?-->
+{% block title %}Carte d'identité  des étudiants{% endblock %}
+
+{% block content %}
+<table>
+	<th>
+		<tr class="titre">
+			<td><h2 class="h2">Liste des étudiants</h2></td>
+		</tr>
+	</th>
+	<tbody>
+		<tr>
+			<td>
+				<ul>
+	{% for etud in etudiant %}
+		<li>
+			<a href="{% url 'profiles' etud.id %}">
+			{{etud.Matricule}}-{{etud.Nom}}
+			</a>
+		</li>
+		{% endfor %}
+</ul>
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>
+				<h3 class="h3">Total({{etudiant|length}} étudiants)</h3>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+
+{% endblock %}

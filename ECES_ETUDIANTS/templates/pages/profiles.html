@@ -1,0 +1,24 @@
+{% extends 'mise en page/base.html' %}
+<!---le block content veut dire quoi?-->
+{% block content %}
+<table border="10"  class ="profiles">
+<tr>
+	<th colspan="2"></th>
+</tr>
+<tr>
+		<td>
+<img src="{{object.photos.url}}"><br/>
+		</td>
+	<td>
+Nom:{{object.Nom}}<br/>
+Prénom:{{object.Prénom}}<br/>
+Age:{{object.Age}}<br/>
+Adresse:{{object.Adresse}}<br/>
+Niveau:{{object.Niveau}}<br/>
+Option:{{object.Option}}<br/>
+Matricule:{{object.Matricule}}<br/>
+Description:{{object.Description}}<br/>
+	</td>
+</tr>
+</table>
+{% endblock %}
